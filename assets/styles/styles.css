@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html, body {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .sliderName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+}
+.container .images {
+  width: 600px;
+  height: 300px;
+  position: relative;
+}
+.container .images .slidesMargin {
+  width: 628px !important;
+}
+.container .images .slides {
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.container .images .slides .slide {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  transition: 2s;
+}
+.container .images .slides .slideTwo, .container .images .slides .slideThree, .container .images .slides .slideFour {
+  width: 200px !important;
+  border-radius: 10px;
+}
+.container .images .slides .slideFour {
+  height: 80%;
+}
+.container .images button {
+  background-color: rgb(240, 11, 11);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: 9;
+}
+.container .images .btnNext {
+  right: -55px;
+  top: 40%;
+}
+.container .images .btnPrev {
+  left: -55px;
+  top: 42%;
+}
+
+.hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
